@@ -16,14 +16,7 @@ import { useWebRTCCall } from "../hooks/useWebRTCCall";
 import MessageInput from "./MessageInput";
 import Profile from "./Profile";
 
-type CallHistoryItem = {
-    id: string;
-    type: "audio" | "video";
-    direction: "incoming" | "outgoing";
-    status: "Calling" | "Connected" | "Rejected" | "Missed call" | "Ended";
-    dateTime: string;
-    duration?: string;
-};
+
 
 type Props = {
     chat: Chat;
