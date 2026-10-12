@@ -1,0 +1,98 @@
+import type { Chat } from "../types/chat";
+
+export const chats: Chat[] = [
+    {
+        id: "1",
+        name: "Arun Kumar",
+        avatar: "https://i.pravatar.cc/150?img=12",
+        lastMessage: "Hey, how are you?",
+        time: "2:30 PM",
+        unreadCount: 3,
+        isOnline: true,
+        isPinned: true,
+        about: "Frontend Developer",
+        phone: "+91 98765 43210",
+        messages: [
+            {
+                id: "m1",
+                text: "Hi Renuga!",
+                time: "2:25 PM",
+                sender: "other",
+                type: "text",
+            },
+            {
+                id: "m2",
+                text: "Hey, how are you?",
+                time: "2:30 PM",
+                sender: "me",
+                type: "text",
+            },
+        ],
+    },
+    {
+        id: "2",
+        name: "Priya",
+        avatar: "https://i.pravatar.cc/150?img=45",
+        lastMessage: "I'll call you later",
+        time: "1:15 PM",
+        unreadCount: 5,
+        isOnline: false,
+        isPinned: true,
+        lastSeen: "today at 10:30 AM",
+        about: "Available for work",
+        phone: "+91 91234 56789",
+        messages: [
+            {
+                id: "m3",
+                text: "Are you free?",
+                time: "1:10 PM",
+                sender: "other",
+                type: "text",
+            },
+            {
+                id: "m4",
+                text: "I'll call you later",
+                time: "1:15 PM",
+                sender: "me",
+                type: "text",
+            },
+        ],
+    },
+    {
+        id: "3",
+        name: "Rahul",
+        avatar: "https://i.pravatar.cc/150?img=33",
+        lastMessage: "Okay 👍",
+        time: "12:30 PM",
+        unreadCount: 1,
+        isOnline: true,
+        isPinned: false,
+        about: "Busy",
+        phone: "+91 99887 66554",
+
+        messages: [
+            {
+                id: "m5",
+                text: "Okay 👍",
+                time: "12:30 PM",
+                sender: "other",
+                type: "text",
+            },
+        ],
+    },
+    {
+        id: "4",
+        name: "Divya",
+        avatar: "https://i.pravatar.cc/150?img=47",
+        lastMessage: "See you tomorrow",
+        time: "11:20 AM",
+        unreadCount: 0,
+        isOnline: false,
+        isPinned: false,
+        lastSeen: "yesterday at 8:20 PM",
+        about: "Hello there!",
+        phone: "+91 90909 80808",
+        messages: [],
+
+    },
+];
